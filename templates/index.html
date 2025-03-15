@@ -5,24 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
-
-    {% include 'components/navbar.html' %}
-
     <header>
-        Bienvenido a Nuestra Web
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/474x/c9/11/26/c91126a4ae40cf2fcaf7f48e4e2679a1.jpg" alt="Logo">
+            <div class="logo">TechLand</div>
+        </div>
     </header>
+    
 
-    <section class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>Ofrecemos cursos de programación para ayudarte a mejorar tus habilidades.</p>
-        <a href="{{ url_for('contacto') }}" class="button">Contáctanos</a>
+    <div class="header">
+        <div class="overlay">
+            <h1>Programar es transformar el mundo</h1>
+        </div>
+    </div>
+    <p>TechLand es una empresa que ofrece cursos online de programación, te brinda los
+         recursos necesarios. Aprende a programar desde cero en la estancia de tu oficina u hogar. Ofrecemos precios accesibles para cada persona.</p>
+    
+
+         <section class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Ofrecemos cursos de programación para ayudarte a mejorar tus habilidades.</p>
+            <a href="{{ url_for('contacto.html') }}" class="info-button">Contáctanos</a>
+        </section>    
+    
+    <section class="logros container">
+        <h2> Servicios</h2>
+        <div class="logro">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQbutxj7iSexwBTbtmscyKJiIXdP_JhN6qg&s">
+            <p>Cursos</p>
+        </div>
+        <div class="logro">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQbutxj7iSexwBTbtmscyKJiIXdP_JhN6qg&s" >
+            <p>Herramientas</p>
+        </div>
     </section>
-
+    
     <footer>
-        &copy; 2025 - Todos los derechos reservados
+        <p>&copy; 2025 TechLand. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
